@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert RealTime Database"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginStart="55sp"
+        android:layout_marginTop="30sp"
+        />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="20sp"
+        />
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_below="@id/editName"
+        />
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Phone"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_below="@id/editEmail"
+        android:maxLength="10"
+        android:inputType="number"
+        />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            android:layout_below="@id/editPhone"
+            android:layout_marginTop="20sp"
+            />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="20sp"
+         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+</RelativeLayout>
